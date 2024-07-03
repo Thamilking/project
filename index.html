@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="lightbox.css">
+    <link rel="stylesheet" href="lightbox.min.css">
+    <link rel="stylesheet" href="index.js">
+</head>
+
+<body>
+
+ <!--<div class="header">
+        <img src="./Links/image-07.png" alt="">
+    </div>
+
+        <div class="header1">
+        <h1>
+            <P style="color: red;"> Lorem ipsum dolor</P>
+
+        </h1>
+    </div>
+    <div class="header2">
+        <P>
+        <h1>Section title goes here</h1>
+        </P>
+    </div>-->
+    <div class="header">
+        <div class="background">
+        
+       <!--- <img src="./Links/image-07.png" alt="">-->
+       
+        <div class="header1">
+            <h3 > Lorem ipsum <span class="name">dolar </span> </h3>
+        </div>
+        </div>
+        
+        <div class="btn">
+            
+<a href="" class="onclick">Explore</a><br>
+<a href="" class="onclick">Explore</a>
+
+        </div>
+        <div class="header2">
+            <P>
+            <h1  style="color: rgb(117, 3, 3);">Section title goes here</h1>
+            </P>
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptates est vitae possimus id</h2>
+        </div>
+
+
+        <div class="gallery">
+
+      <div class="box">        
+   <img  src="./Links/300 (10).jpeg">
+   <h2  style="color :rgb(128, 27, 27);">John
+    Designation
+    Division</h2>
+    <div class="content">
+
+      <p>“ Lorem ipsum dolor sit amet, 
+    consectetuer adipiscing elit, sed diam 
+    nonummy nibh euismod tincidunt ut 
+    laoreet dolore magna aliquam erat  </p>
+    <a href="" class="card-button">Explore now </a>
+    </div>
+        </div>
+
+    <div class="box">   
+
+<img src="./Links/300 (1).jpeg">
+<h2  style="color :rgb(128, 27, 27);">jane 
+    Designation
+     Division</h2>
+     <div class="content">
+<p>“ Lorem ipsum dolor sit amet, 
+    consectetuer adipiscing elit, sed diam 
+    nonummy nibh euismod tincidunt ut 
+    laoreet dolore magna aliquam erat </p>
+    <a href="" class="card-button">Explore now</a>
+    </div>
+    </div>
+
+<div class="box">
+
+  <img src="./Links/300.jpeg" alt="" >
+  <h2 style="color :rgb(128, 27, 27);">jermy
+    Designation
+    Division</h2>
+    <div class="content">
+<p>“ Lorem ipsum dolor sit amet, 
+    consectetuer adipiscing elit, sed diam 
+    nonummy nibh euismod tincidunt ut 
+    laoreet dolore magna aliquam erat  </p>
+    <a href="" class="card-button">Explore now</a>
+    </div>
+    </div>
+</div>
+<div class="header3">
+    <p>
+<h1  style="color: rgb(102, 2, 2);">Section title goes here</h1>
+    </p>
+<h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod .</h2>
+
+    <div class="container">
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+          <img src="./Links/image-03.jpg" style="width:50%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+          <img src="./Links/image-02.jpg" style="width:50%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+          <img src="./Links/image-01.jpg" style="width:50%">
+        </div>
+          
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+          <img src="./Links/image-05.jpg" style="width:50%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+          <img src="./Links/image-06.jpg" style="width:50%">
+        </div>
+          
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+          <img src="./Links/image-04.jpg" style="width:50%">
+        </div>
+          
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="./Links/image-03.jpg" style="width:100%" onclick="currentSlide(1)" alt=" ">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./Links/image-02.jpg" style="width:100%" onclick="currentSlide(2)" alt=" ">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./Links/image-01.jpg" style="width:100%" onclick="currentSlide(3)" alt=" ">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./Links/image-05.jpg" style="width:100%" onclick="currentSlide(4)" alt=" ">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./Links/image-06.jpg" style="width:100%" onclick="currentSlide(5)" alt=" ">
+          </div>    
+          <div class="column">
+            <img class="demo cursor" src="./Links/image-04.jpg" style="width:100%" onclick="currentSlide(6)" alt=" ">
+          </div>
+        </div>
+      </div>
+      <script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+     
+</body>
+
+
+</html>
